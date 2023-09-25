@@ -1,9 +1,12 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:bank/build_context_ext.dart';
+import 'package:bank/constants.dart';
 import 'package:bank/router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class InitPage extends StatefulWidget {
   const InitPage({super.key});
@@ -14,13 +17,24 @@ class InitPage extends StatefulWidget {
 
 class _InitPageState extends State<InitPage> {
   var _inited = false;
+  late final SharedPreferences _sharedPrefs;
 
   Future<bool> initilize() async {
     _inited = true;
+    _sharedPrefs = context.read<SharedPreferences>();
+    final onBoardingShowed =
+        _sharedPrefs.getBool(Constants.onBoardingShowed) ?? false;
+    if (!onBoardingShowed) {
+      await _sharedPrefs.setBool(Constants.onBoardingShowed, true);
+      context.go(Routes.start);
+      return false;
+    }
+
     // await Future.delayed(const Duration(seconds: 2));
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       context.go(Routes.home);
     });
+
     return false;
   }
 

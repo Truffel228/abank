@@ -3,16 +3,11 @@ import 'dart:async';
 import 'package:bank/app_theme.dart';
 import 'package:bank/router.dart';
 import 'package:flutter/material.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  OneSignal.Debug.setLogLevel(OSLogLevel.verbose);
-  OneSignal.initialize("f7e66704-ad32-4080-b759-6a22a7fe2116");
-  OneSignal.Notifications.requestPermission(true);
 
   final sharedPrefs = await SharedPreferences.getInstance();
   final StreamController<bool> updateBalanceStream =
