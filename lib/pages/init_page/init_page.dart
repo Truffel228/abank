@@ -24,7 +24,7 @@ class _InitPageState extends State<InitPage> {
     _sharedPrefs = context.read<SharedPreferences>();
     final onBoardingShowed =
         _sharedPrefs.getBool(Constants.onBoardingShowed) ?? false;
-    if (!onBoardingShowed) {
+    if (onBoardingShowed) {
       await _sharedPrefs.setBool(Constants.onBoardingShowed, true);
       context.go(Routes.start);
       return false;

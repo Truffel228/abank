@@ -39,6 +39,7 @@ class _MyAppState extends State<MyApp> {
       child: Provider.value(
         value: widget._sharedPrefs,
         child: MaterialApp.router(
+          debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           theme: AppTheme.theme,
           routerConfig: Routes.router,
