@@ -1,4 +1,4 @@
-package com.ablxow.ab.simulator
+package com.obank.simulator.ptv
 
 import io.flutter.embedding.android.FlutterActivity
 

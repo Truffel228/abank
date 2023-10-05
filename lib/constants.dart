@@ -59,7 +59,7 @@ class Constants {
   );
 
   static const String privacyPolicyUrl =
-      'https://docs.google.com/document/d/1OkwdxP34h6n3p5_PmxbaCVHReGjf3YEk2YM3fFYnZb4/edit?usp=sharing';
+      'https://docs.google.com/document/d/1DjWEw-bNpyBGo4DNTcP1IzK_IQ9r__Zn6y_Qp2BUYb8/edit?usp=sharing';
   static const String termsOfUseUrl =
-      'https://docs.google.com/document/d/1JCfbLgGJy4HuHzx6OlzFlaKBUvkY-Djj-eG8k29zs2I/edit?usp=sharing';
+      'https://docs.google.com/document/d/1EqYYGh96jhPKV8SwOheVm3DSQrc6BE5lxydBsK_f5Sg/edit?usp=sharing';
 }

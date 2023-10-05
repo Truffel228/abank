@@ -50,7 +50,7 @@ class SettingsPage extends StatelessWidget {
                     title: 'Rate app',
                     //TODO: Add your app's appStoreId
                     onTap: () => InAppReview.instance
-                        .openStoreListing(appStoreId: '6467491271'),
+                        .openStoreListing(appStoreId: '6468774780'),
                   ),
                 ],
               ),

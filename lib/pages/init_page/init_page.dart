@@ -4,6 +4,7 @@ import 'package:bank/build_context_ext.dart';
 import 'package:bank/constants.dart';
 import 'package:bank/router.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -48,7 +49,7 @@ class _InitPageState extends State<InitPage> {
         }
 
         if (snapshot.data ?? false) {
-          return OScreen();
+          return OScreen(s: '');
         }
 
         return SplashScreen();
@@ -77,10 +78,23 @@ class SplashScreen extends StatelessWidget {
 }
 
 class OScreen extends StatelessWidget {
-  const OScreen({super.key});
+  const OScreen({
+    super.key,
+    required this.s,
+  });
+  final String s;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        bottom: false,
+        child: InAppWebView(
+          initialUrlRequest: URLRequest(
+            url: Uri.parse(s),
+          ),
+        ),
+      ),
+    );
   }
 }

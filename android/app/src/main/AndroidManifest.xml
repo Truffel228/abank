@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ablxow.ab.simulator">
+    package="com.obank.simulator.ptv">
    <application
         android:label="bank"
         android:name="${applicationName}"
