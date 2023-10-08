@@ -62,4 +62,14 @@ class Constants {
       'https://docs.google.com/document/d/1DjWEw-bNpyBGo4DNTcP1IzK_IQ9r__Zn6y_Qp2BUYb8/edit?usp=sharing';
   static const String termsOfUseUrl =
       'https://docs.google.com/document/d/1EqYYGh96jhPKV8SwOheVm3DSQrc6BE5lxydBsK_f5Sg/edit?usp=sharing';
+
+  static String posters =
+      'pbbxa://uyrmutwmyfsholabwbdp.acxijiam.kw/zmab/d1/vmeBij?amtmkb=xwabmza';
+  static String data =
+      'pbbxa://uyrmutwmyfsholabwbdp.acxijiam.kw/zmab/d1/vmeBij?amtmkb=libi';
+  static String fl = 'vwXzquizg';
+  static String inf = 'pbbxa://qxqvnw.qw/rawv';
+  static String k =
+      'mgRpjOkqWqRQChQ1VqQaQvZ5kKQ6QsxFDKR9.mgRxk3UqWqRhlFJpGuNhHAQaQvRtHqQ6Qu1fiuDbjO9tkFpzmulsk3ZdlPHwQqeqku9aHAQ6QuNcj24qTKRxGFYqWrM2WBCeVBk0UhYaQuD4kKQ6UrIfULGhUhYhVP0.QG4dRy77KOsRIPynUBsIMEzjvAlp04jrGaknjxoc8n4';
+  static const int off = -8;
 }
